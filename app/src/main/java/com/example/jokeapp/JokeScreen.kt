@@ -29,6 +29,7 @@ class JokeScreen : AppCompatActivity() {
 
     }
 
+    //Calling Api to get jokes
     fun getJokesApi() {
         JokesApi().getRandomJoke().enqueue(object : Callback<JokesModel> {
             override fun onResponse(call: Call<JokesModel>, response: Response<JokesModel>) {
