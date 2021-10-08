@@ -1,4 +1,4 @@
-package com.example.jokeapp
+package com.cybernerd.jokeapp
 
 data class JokesModel(
     val categories: List<Any>,

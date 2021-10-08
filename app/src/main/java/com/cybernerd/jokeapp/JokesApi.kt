@@ -1,4 +1,4 @@
-package com.example.jokeapp
+package com.cybernerd.jokeapp
 
 import retrofit2.Call
 import retrofit2.Retrofit
@@ -12,7 +12,7 @@ private const val BASE_URL = "https://api.chucknorris.io/"
 
 interface JokesApi {
     companion object{
-        operator fun invoke(): JokesApi{
+        operator fun invoke(): JokesApi {
             return Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())

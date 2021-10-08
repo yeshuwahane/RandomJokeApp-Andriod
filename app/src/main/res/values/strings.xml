@@ -2,4 +2,5 @@
     <string name="app_name">Joke App</string>
     <string name="api_desc_txt">chucknorris.io is a free JSON API for hand curated Chuck Norris facts</string>
     <string name="get_a_joke">get a joke</string>
+    <string name="source_code_github">Source code [github]</string>
 </resources>

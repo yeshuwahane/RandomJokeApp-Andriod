@@ -1,4 +1,4 @@
-package com.example.jokeapp
+package com.cybernerd.jokeapp
 
 import org.junit.Test
 

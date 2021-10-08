@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.cybernerd.jokeapp.MainActivity">
 
     <ImageView
         android:id="@+id/app_logo"
@@ -22,13 +22,23 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:text="@string/api_desc_txt"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
         android:textSize="19sp"
-        android:textAlignment="center"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/app_logo"
         app:layout_constraintStart_toStartOf="@id/app_logo"
         app:layout_constraintTop_toBottomOf="@id/app_logo" />
+
+    <Button
+        android:id="@+id/button_github_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/source_code_github"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/api_description" />
 
 
     <Button
