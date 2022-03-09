@@ -6,18 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.cybernerd.jokeapp.view.JokeScreen">
 
-    <TextView
-        android:id="@+id/countTV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="count : 1"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        android:textSize="19sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/joke_image_iv"
