@@ -1,5 +1,6 @@
-package com.cybernerd.jokeapp
+package com.cybernerd.jokeapp.api
 
+import com.cybernerd.jokeapp.model.JokesModel
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

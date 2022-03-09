@@ -11,10 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JokeApp">
         <activity
-            android:name="com.cybernerd.jokeapp.JokeScreen"
+            android:name="com.cybernerd.jokeapp.view.JokeScreen"
             android:exported="true" />
         <activity
-            android:name="com.cybernerd.jokeapp.MainActivity"
+            android:name="com.cybernerd.jokeapp.view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

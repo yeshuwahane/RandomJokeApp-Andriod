@@ -1,24 +1,27 @@
-package com.cybernerd.jokeapp
+package com.cybernerd.jokeapp.view
 
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.cybernerd.jokeapp.R
-import kotlinx.android.synthetic.main.activity_main.*
+import com.cybernerd.jokeapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
 
-        button_get_joke.setOnClickListener {
+
+        binding.buttonGetJoke.setOnClickListener {
             val intent = Intent(this, JokeScreen::class.java)
             startActivity(intent)
         }
 
-        button_github_link.setOnClickListener {
+        binding.buttonGithubLink.setOnClickListener {
 
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://github.com/yeshuwahane/RandomJokeApp-Andriod"))
